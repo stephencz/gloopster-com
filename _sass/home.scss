@@ -1,0 +1,178 @@
+.home-header-wrapper 
+{
+
+  background-color: #222;
+
+  border-bottom: 1px solid #383838;
+
+  color: $off-white;
+  font-size: 2rem;
+
+  padding-top: 2rem;
+  padding-bottom: 0.75rem;
+}
+
+.home-header-wrapper .brand
+{
+  color: $teal;
+
+  font-weight: 900;  
+
+  animation: fadeIn;
+  animation-delay: 250ms;
+  animation-duration: 250ms;
+  animation-fill-mode: both;
+
+
+}
+
+.home-header-wrapper nav ul
+{
+  line-height: 2rem;
+
+  list-style: none;
+  padding-left: 0;
+  text-align: right;
+}
+
+.home-header-wrapper nav ul li
+{
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 2rem;
+
+}
+
+.home-header-wrapper nav ul li.one
+{
+  animation: fadeIn;
+  animation-delay: 250ms;
+  animation-duration: 250ms;
+  animation-fill-mode: both;
+}
+
+.home-header-wrapper nav ul li.two
+{
+  animation: fadeIn;
+  animation-delay: 350ms;
+  animation-duration: 250ms;
+  animation-fill-mode: both;
+}
+
+.home-header-wrapper nav ul li.three
+{
+  animation: fadeIn;
+  animation-delay: 450ms;
+  animation-duration: 250ms;
+  animation-fill-mode: both;
+}
+
+.home-header-wrapper nav ul li.four
+{
+  animation: fadeIn;
+  animation-delay: 550ms;
+  animation-duration: 250ms;
+  animation-fill-mode: both;
+}
+
+.home-header-wrapper nav ul li.five
+{
+  animation: fadeIn;
+  animation-delay: 650ms;
+  animation-duration: 250ms;
+  animation-fill-mode: both;
+}
+
+.home-header-wrapper nav ul li a:link,
+.home-header-wrapper nav ul li a:active,
+.home-header-wrapper nav ul li a:visited
+{
+  color: $off-white;
+  text-decoration: none;
+}
+
+.home-header-wrapper nav ul li a:hover
+{
+  color: $nectar;
+}
+
+.home-landing-wrapper
+{
+  border-bottom: 10px solid $light-gray;
+
+  background: rgb(98,157,144);
+  background: linear-gradient(145deg, #2c2c2c 10%, rgba(52,52,52,1) 10%, rgba(35,35,35,1) 90%, rgba(42,42,42,1) 90%);
+  background-position: center;
+
+  background-color: $dark-gray;
+
+  color: $off-white;
+
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+
+.home-landing-wrapper .blurb
+{
+  font-size: 3rem;
+  line-height: 5rem;
+  margin-top: 50px;
+}
+
+.home-landing-wrapper .blurb .article-amount
+{
+  color: $peach;
+  font-weight: 700;
+
+  animation: bounceIn;
+  animation-delay: 1s;
+  animation-duration: 750ms;
+  animation-fill-mode: both;
+}
+
+.home-landing-wrapper .blurb .course-amount
+{
+  color: $bubblegum;
+  font-weight: 700;
+
+  animation: bounceIn;
+  animation-delay: 750ms;
+  animation-duration: 750ms;
+  animation-fill-mode: both;
+
+}
+
+.home-landing-wrapper .blurb .call-to-action
+{
+  color: $nectar;
+  font-weight: 700;
+
+  animation: bounceIn;
+  animation-delay: 500ms;
+  animation-duration: 750ms;
+  animation-fill-mode: both;
+
+}
+
+.home-landing-wrapper .attention-grabber
+{
+
+  border-radius: 10px;
+  border: 5px solid $light-gray;
+  background-color: $off-white;
+
+  min-width: 400px;
+  max-width: 600px;
+  max-height: 400px;
+  height: 400px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  animation: backInRight;
+  animation-delay: 500ms;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
