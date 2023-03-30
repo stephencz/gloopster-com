@@ -9,8 +9,6 @@
 
 .home-header-wrapper .brand
 {
-  color: $teal;
-
   font-size: 4rem;
   font-weight: 900;  
 
@@ -20,6 +18,15 @@
   animation-fill-mode: both;
 
   text-align: center;
+}
+
+.home-header-wrapper .brand a:link,
+.home-header-wrapper  .brand a:active,
+.home-header-wrapper  .brand a:visited,
+.home-header-wrapper .brand a:hover
+{
+  color: $teal;
+  text-decoration: none;
 }
 
 .home-header-wrapper nav ul

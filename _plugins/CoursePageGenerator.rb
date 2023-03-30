@@ -2,25 +2,6 @@ module CourseExtraData
 
   class CourseGenerator < Jekyll::Generator
 
-    
-    def generate(site)
-      # Get the courses.json data from the _data folder and iterate over
-      # each course defined in it.
-      course_data = site.data['courses']
-      course_docs = site.collections["courses"].docs
-      
-      # Get cleaned course data and add the data to site.data
-      clean_data = manage_course_data(course_data, course_docs)
-      site.data["course_data"] = clean_data
-
-      # Generate pages for each course, lesson, and challenge
-      clean_data.each do | course |
-        course[1]["docs"].each do | doc |
-          site.pages << CoursePage.new(site, course, doc)
-        end
-      end
-    end
-
     # Converts the course.json data file and the _courses collection into
     # a single data structure for ease of access and use.
     # @param course_data site.data["courses"]
@@ -47,7 +28,7 @@ module CourseExtraData
         end
 
         sort_cursor += 1
-      end
+      end        
 
       # Populate each course with its related documents
       sorted_docs.each do | doc | 
@@ -60,6 +41,26 @@ module CourseExtraData
 
       return data
     end
+    
+    def generate(site)
+      # Get the courses.json data from the _data folder and iterate over
+      # each course defined in it.
+      course_data = site.data['courses']
+      course_docs = site.collections["courses"].docs
+      
+      # Get cleaned course data and add the data to site.data
+      clean_data = manage_course_data(course_data, course_docs)
+      site.data["course_data"] = clean_data
+
+      # Generate pages for each course, lesson, and challenge
+      clean_data.each do | course |
+        course[1]["docs"].each do | doc |
+          site.pages << CoursePage.new(site, course, doc)
+        end
+      end
+    end
+
+    
 
   end
 
@@ -70,31 +71,20 @@ module CourseExtraData
       @base = site.source
       @dir  = course[1]["data"]["permalink"]
 
-      @data = doc.data
-      @content = doc.content
-
       @basename = "index"
       @ext      = ".html"
+
+      @data = doc.data
 
       @content_type = doc.data["content_type"]
       if @content_type != "portal"
         @basename = doc.data["title"].downcase.gsub(/[^0-9a-z ]/i, '').gsub(" ", "-")
       end
 
-      # Look up front matter defaults scoped to type `categories`, if given key
-      #doesn't exist in the `data` hash.
-      data.default_proc = proc do |_, key|
-         site.frontmatter_defaults.find(relative_path, :courses, key)
-      end
+      @name = @basename + @ext
 
-    end
+      @content = doc.content
 
-    def url_placeholders
-      {
-        :path   => @dir,
-        :basename   => basename,
-        :output_ext => ext,
-      }
     end
 
   end

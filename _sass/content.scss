@@ -1,0 +1,66 @@
+.content-wrapper
+{
+  margin-bottom: $unit-four;
+}
+
+.content
+{
+  font-size: $global-font-size;
+  line-height: $global-line-height;
+}
+
+.content p
+{
+  margin-bottom: $unit-one;
+}
+
+.content h1 { font-weight: 700; }
+.content h2 { font-weight: 700; }
+.content h3 { font-weight: 700; }
+.content h4 { font-weight: 400; }
+.content h5 { font-weight: 400; }
+.content h6 { font-weight: 400; }
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px)
+{
+
+
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px)
+{
+
+
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px)
+{
+
+  .content
+  {
+    font-size: 1.5rem;
+    line-height: $unit-one-half;
+  }
+
+
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px)
+{
+
+
+  
+
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px)
+{
+
+}

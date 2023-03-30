@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: course-lesson
 course_id: "html"
 content_type: "lesson"
 lesson_index: 2
