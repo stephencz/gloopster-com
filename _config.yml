@@ -9,6 +9,9 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Gloopster
 github_username:  gloopster
 
+collections:
+  courses:
+    output: false
 
 markdown: kramdown
 

@@ -1,0 +1,11 @@
+{{ site.data}}
+
+<ul>
+{%- for lesson in site.courses -%}
+  <li>{{ lesson.title }}</li>
+  {%- if lesson.course_id contains include.id -%}
+  <li><a href="{{ lesson.permalink }}">{{ lesson.title }}</a></li>
+  {%- endif -%}
+{%- endfor -%}
+</ul>
+

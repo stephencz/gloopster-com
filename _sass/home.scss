@@ -1,21 +1,17 @@
 .home-header-wrapper 
 {
-
-  background-color: #222;
-
-  border-bottom: 1px solid #383838;
-
   color: $off-white;
-  font-size: 2rem;
 
-  padding-top: 2rem;
+  padding-top: 5rem;
   padding-bottom: 0.75rem;
+  margin-bottom: 0rem;
 }
 
 .home-header-wrapper .brand
 {
   color: $teal;
 
+  font-size: 4rem;
   font-weight: 900;  
 
   animation: fadeIn;
@@ -23,25 +19,28 @@
   animation-duration: 250ms;
   animation-fill-mode: both;
 
-
+  text-align: center;
 }
 
 .home-header-wrapper nav ul
 {
+  list-style: none;
+
+  text-align: center;
   line-height: 2rem;
 
-  list-style: none;
   padding-left: 0;
-  text-align: right;
+  margin-top: 4rem;
 }
 
 .home-header-wrapper nav ul li
 {
   display: inline-block;
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-left: 2rem;
 
+  font-size: 1rem;
+  font-weight: 700;
+
+  margin-right: 1rem;
 }
 
 .home-header-wrapper nav ul li.one
@@ -102,63 +101,82 @@
   border-bottom: 10px solid $light-gray;
 
   background: rgb(98,157,144);
-  background: linear-gradient(145deg, #2c2c2c 10%, rgba(52,52,52,1) 10%, rgba(35,35,35,1) 90%, rgba(42,42,42,1) 90%);
+  background: linear-gradient(145deg, #2c2c2c 60%, #343434 60%, #2c2c2c 80%, #343434 80%);
   background-position: center;
 
   background-color: $dark-gray;
 
   color: $off-white;
 
-  padding-top: 10rem;
   padding-bottom: 10rem;
+
+  overflow-x: hidden;
 }
 
 
 .home-landing-wrapper .blurb
 {
-  font-size: 3rem;
-  line-height: 5rem;
+  display: none;
+
+  font-size: 2rem;
+  line-height: 3rem;
   margin-top: 50px;
+
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
 .home-landing-wrapper .blurb .article-amount
 {
-  color: $peach;
+  color: $off-white;
   font-weight: 700;
 
-  animation: bounceIn;
+  animation: fadeIn;
   animation-delay: 1s;
   animation-duration: 750ms;
   animation-fill-mode: both;
 }
 
+.home-landing-wrapper .blurb .article-amount span
+{
+  color: $peach;
+}
+
 .home-landing-wrapper .blurb .course-amount
 {
-  color: $bubblegum;
+  color: $off-white;
   font-weight: 700;
 
-  animation: bounceIn;
+  animation: fadeIn;
   animation-delay: 750ms;
   animation-duration: 750ms;
   animation-fill-mode: both;
+}
 
+.home-landing-wrapper .blurb .course-amount span
+{
+  color: $bubblegum;
 }
 
 .home-landing-wrapper .blurb .call-to-action
 {
-  color: $nectar;
+  color: $off-white;
   font-weight: 700;
 
-  animation: bounceIn;
+  animation: fadeIn;
   animation-delay: 500ms;
   animation-duration: 750ms;
   animation-fill-mode: both;
 
 }
 
+.home-landing-wrapper .blurb .call-to-action span.specific-action
+{
+  display: inline-block;
+}
+
 .home-landing-wrapper .attention-grabber
 {
-
   border-radius: 10px;
   border: 5px solid $light-gray;
   background-color: $off-white;
@@ -171,8 +189,99 @@
   margin-left: auto;
   margin-right: auto;
 
-  animation: backInRight;
+  margin-top: 5rem;
+
+  animation: fadeIn;
   animation-delay: 500ms;
   animation-duration: 1s;
   animation-fill-mode: both;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px)
+{
+  .home-header-wrapper .brand
+  {
+    font-size: 5rem;
+  }
+
+  .home-header-wrapper nav ul li
+  {
+    font-size: 1.5rem;
+  }
+
+
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px)
+{
+
+
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px)
+{
+
+  .home-landing-wrapper .attention-grabber
+  {
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .home-landing-wrapper .blurb
+  {
+    display: block;
+    text-align: left;
+  }
+
+  .home-header-wrapper
+  {
+    margin-bottom: 10rem;
+  }
+
+  .home-landing-wrapper .blurb
+  {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+  
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px)
+{
+
+  .home-header-wrapper .brand
+  {
+    text-align: left;
+  }
+
+  .home-header-wrapper nav ul
+  {
+    text-align: right;
+    margin-top: 0;
+  }
+
+  .home-header-wrapper nav ul li
+  {
+    margin-left: 2rem;
+    margin-right: 0;
+  }
+
+  
+
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px)
+{
+  .home-landing-wrapper .blurb
+  {
+    font-size: 4rem;
+    line-height: 7rem;
+    margin-top: 0;
+  }
 }

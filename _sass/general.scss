@@ -1,0 +1,98 @@
+.general-header-wrapper 
+{
+
+  background-color: #222;
+
+  border-bottom: 1px solid #383838;
+
+  color: $off-white;
+  font-size: 2rem;
+
+  padding-top: 2rem;
+  padding-bottom: 0.75rem;
+}
+
+.general-header-wrapper .brand
+{
+  color: $teal;
+
+  font-weight: 900;  
+
+  animation: fadeIn;
+  animation-delay: 250ms;
+  animation-duration: 250ms;
+  animation-fill-mode: both;
+
+
+}
+
+.general-header-wrapper nav ul
+{
+  line-height: 2rem;
+
+  list-style: none;
+  padding-left: 0;
+  text-align: right;
+}
+
+.general-header-wrapper nav ul li
+{
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 2rem;
+
+}
+
+.general-header-wrapper nav ul li.one
+{
+  animation: fadeIn;
+  animation-delay: 250ms;
+  animation-duration: 250ms;
+  animation-fill-mode: both;
+}
+
+.general-header-wrapper nav ul li.two
+{
+  animation: fadeIn;
+  animation-delay: 350ms;
+  animation-duration: 250ms;
+  animation-fill-mode: both;
+}
+
+.general-header-wrapper nav ul li.three
+{
+  animation: fadeIn;
+  animation-delay: 450ms;
+  animation-duration: 250ms;
+  animation-fill-mode: both;
+}
+
+.general-header-wrapper nav ul li.four
+{
+  animation: fadeIn;
+  animation-delay: 550ms;
+  animation-duration: 250ms;
+  animation-fill-mode: both;
+}
+
+.general-header-wrapper nav ul li.five
+{
+  animation: fadeIn;
+  animation-delay: 650ms;
+  animation-duration: 250ms;
+  animation-fill-mode: both;
+}
+
+.general-header-wrapper nav ul li a:link,
+.general-header-wrapper nav ul li a:active,
+.general-header-wrapper nav ul li a:visited
+{
+  color: $off-white;
+  text-decoration: none;
+}
+
+.general-header-wrapper nav ul li a:hover
+{
+  color: $nectar;
+}
