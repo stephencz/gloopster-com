@@ -34,7 +34,7 @@ module CourseExtraData
       sorted_docs.each do | doc | 
         data.each do | course |
           if course[0] == doc.data["course_id"]
-            course[1]["docs"] << doc
+            course[1]["docs"] << { "content" => doc.content, "data" => doc.data}
           end
         end
       end
@@ -74,16 +74,16 @@ module CourseExtraData
       @basename = "index"
       @ext      = ".html"
 
-      @data = doc.data
+      @data = doc["data"]
 
-      @content_type = doc.data["content_type"]
+      @content_type = doc["data"]["content_type"]
       if @content_type != "portal"
-        @basename = doc.data["title"].downcase.gsub(/[^0-9a-z ]/i, '').gsub(" ", "-")
+        @basename = doc["data"]["title"].downcase.gsub(/[^0-9a-z ]/i, '').gsub(" ", "-")
       end
 
       @name = @basename + @ext
 
-      @content = doc.content
+      @content = doc["content"]
 
     end
 

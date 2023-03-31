@@ -1,0 +1,79 @@
+.course-contents-list-wrapper
+{
+  margin-top: $unit-two;
+}
+
+.course-contents-list-wrapper ul
+{
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: $unit-one;
+}
+
+.course-contents-list-wrapper ul li
+{
+  display: grid;
+  grid-template-columns: 0fr 1fr  150px;
+
+  border-radius: 10px;
+  background-color: #ddd;
+
+  width: 100%;
+
+  padding: $unit-half;
+  margin-bottom: $unit-one;
+}
+
+.course-contents-list-wrapper span.content-link
+{
+  color: $dark-gray;
+  margin-right: $unit-half;
+}
+
+.course-contents-list-wrapper a:link,
+.course-contents-list-wrapper a:active,
+.course-contents-list-wrapper a:visited
+{
+  text-decoration: none;
+}
+
+.course-contents-list-wrapper a:hover li span.content-link,
+.course-contents-list-wrapper ul a:hover li
+{
+  color: $blue;
+  background-color: #d4d4d4;
+}
+
+.course-contents-list-wrapper ul li span.content-type
+{
+  border-radius: 10px;
+  color: $dark-gray;
+  text-align: center;
+  padding: 0 $unit-half 0 $unit-half;
+}
+
+.course-contents-list-wrapper ul li span.content-type.lesson
+{
+  background-color: $teal;
+}
+
+.course-contents-list-wrapper ul li span.content-type.challenge
+{
+  background-color: $nectar;
+}
+
+.course-contents-list-wrapper ul li span.content-type.project
+{
+  background-color: $peach;
+}
+
+.course-contents-list-wrapper ul li span.content-order
+{
+  border-radius: 200px;
+  color: $dark-gray;
+  background-color: #efefef;
+  text-align: center;
+  padding: 0 $unit-half 0 $unit-half;
+  margin-right: $unit-one;
+}

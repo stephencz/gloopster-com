@@ -5,4 +5,5 @@ content_type: "lesson"
 lesson_index: 2
 title: "What is CSS?"
 description: "Explains what CSS is"
+permalink: "/courses/css/what-is-css"
 ---

@@ -2,10 +2,10 @@
 layout: course-lesson
 course_id: "html"
 content_type: "lesson"
-lesson_index: 2
-title: "What is HTML?"
+lesson_index: 5
+title: "Ordered and Unordered Lists"
 description: "Explains what HTML is"
-permalink: "/courses/html/what-is-html"
+permalink: "/courses/html/ordered-and-unordered-lists"
 ---
 
 

@@ -1,11 +1,11 @@
 ---
 layout: course-lesson
 course_id: "html"
-content_type: "lesson"
-lesson_index: 2
-title: "What is HTML?"
+content_type: "project"
+lesson_index: 4
+title: "Headers and Paragraphs"
 description: "Explains what HTML is"
-permalink: "/courses/html/what-is-html"
+permalink: "/courses/html/headers-and-paragraphs"
 ---
 
 

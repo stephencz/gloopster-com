@@ -1,0 +1,20 @@
+<div class="course-contents-list-wrapper">
+  <h2>Learning Pathway</h2>
+  <ul class="course-contents-list">
+    {% assign desired_course = site.data.course_data | map: include.id %}
+    {% assign course_data = desired_course[0].data %}
+    {% assign course_docs = desired_course[0].docs %}
+  
+    {%- for doc in course_docs -%}
+    {% if forloop.index > 1 %}
+    <a href="{{ doc.data.permalink }}">
+      <li>
+        <span class="content-order">{{ doc.data.lesson_index | minus: 1}}</span>
+        <span class="content-link" >{{ doc.data.title }}</span>
+        <span class="content-type {{ doc.data.content_type }}">{{ doc.data.content_type | capitalize }}</span>
+      </li>
+    </a>
+    {% endif %}
+    {%- endfor -%}
+  </ul>
+</div>
