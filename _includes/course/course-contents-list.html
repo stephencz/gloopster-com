@@ -1,12 +1,23 @@
 <div class="course-contents-list-wrapper">
   <h2>Learning Pathway</h2>
-  <ul class="course-contents-list">
-    {% assign desired_course = site.data.course_data | map: include.id %}
-    {% assign course_data = desired_course[0].data %}
-    {% assign course_docs = desired_course[0].docs %}
-  
-    {%- for doc in course_docs -%}
-    {% if forloop.index > 1 %}
+
+  {% assign desired_course = site.data.course_data | map: include.id %}
+  {% assign course_data = desired_course[0].data %}
+  {% assign course_docs = desired_course[0].docs %}
+
+  {%- for doc in course_docs -%}
+  {% if forloop.index > 1 %}
+
+  {%- if doc.data.new_section != nil -%}
+  {% assign last_new_section = doc.data.new_section %}
+
+  {%- if last_new_section != doc.data.new_section -%}
+  </ul>
+  {%- endif -%}
+
+  <h3>{{ doc.data.new_section }}</h3>
+  <ul>
+  {%- endif -%}
     <a href="{{ doc.data.permalink }}">
       <li>
         <span class="content-order">{{ doc.data.lesson_index | minus: 1}}</span>
@@ -14,7 +25,10 @@
         <span class="content-type {{ doc.data.content_type }}">{{ doc.data.content_type | capitalize }}</span>
       </li>
     </a>
-    {% endif %}
-    {%- endfor -%}
+  {%- if forloop.last -%}
   </ul>
+  {%- endif -%}
+
+  {% endif %}
+  {%- endfor -%}
 </div>

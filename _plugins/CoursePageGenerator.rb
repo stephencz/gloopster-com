@@ -13,7 +13,9 @@ module CourseExtraData
 
       # Build Hash of courses
       course_data.each do | course |
-        data[course["id"]] = { "data" => course, "docs" => []}
+        if course["draft"] != true
+          data[course["id"]] = { "data" => course, "docs" => []}
+        end
       end
 
       # Sort documents by their `lesson_index` 

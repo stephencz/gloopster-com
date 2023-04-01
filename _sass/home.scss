@@ -126,11 +126,9 @@
   display: none;
 
   font-size: 2rem;
-  line-height: 3rem;
-  margin-top: 50px;
+  line-height: 2rem;
 
   text-align: center;
-  margin-bottom: 4rem;
 }
 
 .home-landing-wrapper .blurb .article-amount
@@ -175,6 +173,7 @@
   animation-duration: 750ms;
   animation-fill-mode: both;
 
+  margin-bottom: $unit-two;
 }
 
 .home-landing-wrapper .blurb .call-to-action span.specific-action
@@ -216,18 +215,10 @@
   {
     font-size: 1.5rem;
   }
-
-
-
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px)
-{
-
-
-
-}
+@media (min-width: 768px) { }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px)
@@ -243,17 +234,13 @@
   {
     display: block;
     text-align: left;
+
+    font-size: 2rem;
   }
 
   .home-header-wrapper
   {
     margin-bottom: 10rem;
-  }
-
-  .home-landing-wrapper .blurb
-  {
-    font-size: 3rem;
-    line-height: 5rem;
   }
   
 }
@@ -279,16 +266,12 @@
     margin-right: 0;
   }
 
-  
-
 }
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px)
 {
   .home-landing-wrapper .blurb
   {
-    font-size: 4rem;
-    line-height: 7rem;
-    margin-top: 0;
+    font-size: 3rem;
   }
 }

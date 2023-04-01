@@ -9,6 +9,14 @@
   line-height: $global-line-height;
 }
 
+.content .emphasize-paragraph
+{
+  border-radius: 10px;
+  background-color: $nectar-pastel;
+  padding: 1rem;
+
+}
+
 .content p
 {
   margin-bottom: $unit-one;
@@ -23,6 +31,19 @@
 .content h6
 {
   margin-bottom: $unit-half;
+}
+
+.content h2
+{
+  margin-top: $unit-four;
+}
+
+.content h3,
+.content h4,
+.content h5,
+.content h6
+{
+  margin-top: $unit-two;
 }
 
 .content h1 { font-weight: 700; }
@@ -55,7 +76,7 @@
 
   .content
   {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: $unit-one-half;
   }
 
@@ -65,9 +86,6 @@
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px)
 {
-
-
-  
 
 }
 // XX-Large devices (larger desktops, 1400px and up)

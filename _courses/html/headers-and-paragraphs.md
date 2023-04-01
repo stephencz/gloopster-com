@@ -1,10 +1,11 @@
 ---
 layout: course-lesson
 course_id: "html"
-content_type: "project"
+content_type: "lesson"
 lesson_index: 4
 title: "Headers and Paragraphs"
 description: "Explains what HTML is"
+new_section: "Poop"
 permalink: "/courses/html/headers-and-paragraphs"
 ---
 

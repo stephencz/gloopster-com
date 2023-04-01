@@ -1,9 +1,9 @@
 .general-header-wrapper 
 {
 
-  background-color: #222;
+  background-color: $dark-gray;
 
-  border-bottom: 1px solid #383838;
+  border-bottom: 1px solid $light-gray;
 
   color: $off-white;
   font-size: 2rem;
@@ -65,7 +65,7 @@
 
 .footer-wrapper {
   border-top: 5px solid $light-gray;
-  color: $off-white;
+  color: $light-gray;
   background-color: $dark-gray;
   padding-bottom: $unit-two;
   padding-top: $unit-two;

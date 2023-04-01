@@ -3,9 +3,22 @@ layout: course-portal
 course_id: "html"
 content_type: "portal"
 lesson_index: 1
-title: "HTML"
-description: "Explains what HTML is"
+title: "Learn HTML"
+description: "A free course in HTML: A programming language essential to web development."
 permalink: "/courses/html/index.html"
 ---
 
-Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+HTML is used by every website and web page that you interact with on a daily basis.
+If you are interested in web development, then learning HTML is essential.
+This course will provide you with a deep understanding of HTML that will act as a foundation for your web development journey.
+
+## Prerequiste Knowledge
+
+* Basic computer knowledge such as typing, saving and opening files, and using a web browser.
+
+## Materials Needed
+
+* Desktop or Laptop Computer
+* Popular web browser such as [Google Chrome](https://www.google.com/chrome/) or [FireFox](https://www.mozilla.org/en-US/firefox/new/) (almost any browser is fine).
+* Free code editor such as [Visual Studio Code](https://code.visualstudio.com/).
+

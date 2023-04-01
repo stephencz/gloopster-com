@@ -1,8 +1,3 @@
-.course-contents-list-wrapper
-{
-  margin-top: $unit-two;
-}
-
 .course-contents-list-wrapper ul
 {
   list-style: none;
@@ -17,7 +12,7 @@
   grid-template-columns: 0fr 1fr  150px;
 
   border-radius: 10px;
-  background-color: #ddd;
+  background-color: $off-white;
 
   width: 100%;
 
@@ -28,6 +23,7 @@
 .course-contents-list-wrapper span.content-link
 {
   color: $dark-gray;
+  
   margin-right: $unit-half;
 }
 
@@ -56,24 +52,27 @@
 .course-contents-list-wrapper ul li span.content-type.lesson
 {
   background-color: $teal;
+  font-weight: 700;
 }
 
 .course-contents-list-wrapper ul li span.content-type.challenge
 {
   background-color: $nectar;
+  font-weight: 700;
 }
 
 .course-contents-list-wrapper ul li span.content-type.project
 {
   background-color: $peach;
+  font-weight: 700;
 }
 
 .course-contents-list-wrapper ul li span.content-order
 {
-  border-radius: 200px;
-  color: $dark-gray;
-  background-color: #efefef;
+  color: $light-gray;
+  font-size: 1rem;
   text-align: center;
+
   padding: 0 $unit-half 0 $unit-half;
   margin-right: $unit-one;
 }
