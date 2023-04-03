@@ -22,7 +22,6 @@
   margin-bottom: $unit-one;
 }
 
-
 .content h1,
 .content h2,
 .content h3,
@@ -65,6 +64,12 @@
   color: $light-blue;
 }
 
+
+.content ul,
+.content ol
+{
+  margin-bottom: $unit-one;
+}
 
 .content span.highlight-text
 {
