@@ -53,6 +53,18 @@
 .content h5 { font-weight: 400; }
 .content h6 { font-weight: 400; }
 
+.content a:link,
+.content a:active,
+.content a:visited
+{
+  color: $blue;
+}
+
+.content a:hover
+{
+  color: $light-blue;
+}
+
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px)

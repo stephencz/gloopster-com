@@ -5,8 +5,9 @@ content_type: "lesson"
 lesson_index: 4
 title: "Headers and Paragraphs"
 description: "Explains what HTML is"
-new_section: "Poop"
 permalink: "/courses/html/headers-and-paragraphs"
+new_section: "Basic Tags"
+draft: true
 ---
 
 

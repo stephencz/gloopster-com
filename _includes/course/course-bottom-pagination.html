@@ -1,0 +1,24 @@
+
+{% assign desired_course = site.data.course_data | map: include.id %}
+{% assign course_data = desired_course[0].data %}
+{% assign course_docs = desired_course[0].docs %}
+
+{% assign previous =  include.index | minus: 1 %}
+{% assign next =  include.index | plus: 1 %}
+
+<div class="course-bottom-pagination-wrapper">
+{%- for doc in course_docs -%}
+
+  {%- if doc.data.lesson_index == previous -%}
+  <div class="previous">
+    <a href=" {{ doc.data.permalink }} ">Previous: {{ doc.data.title }}</a>
+  </div>
+  {%- endif -%}
+
+  {%- if doc.data.lesson_index == next -%}
+  <div class="next">
+    <a href="{{ doc.data.permalink }}">Next: {{ doc.data.title }}</a>
+  </div>
+  {%- endif -%}
+{%- endfor -%}
+</div>

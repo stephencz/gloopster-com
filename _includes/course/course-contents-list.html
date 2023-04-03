@@ -15,7 +15,7 @@
   </ul>
   {%- endif -%}
 
-  <h3>{{ doc.data.new_section }}</h3>
+  <h3 id="{{ doc.data.new_section | slugify }}">{{ doc.data.new_section }}</h3>
   <ul>
   {%- endif -%}
     <a href="{{ doc.data.permalink }}">

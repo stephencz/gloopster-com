@@ -36,7 +36,9 @@ module CourseExtraData
       sorted_docs.each do | doc | 
         data.each do | course |
           if course[0] == doc.data["course_id"]
-            course[1]["docs"] << { "content" => doc.content, "data" => doc.data}
+            if doc.data["draft"] != true
+              course[1]["docs"] << { "content" => doc.content, "data" => doc.data}
+            end
           end
         end
       end
