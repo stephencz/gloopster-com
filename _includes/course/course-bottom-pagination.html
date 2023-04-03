@@ -10,8 +10,15 @@
 {%- for doc in course_docs -%}
 
   {%- if doc.data.lesson_index == previous -%}
+  
   <div class="previous">
-    <a href=" {{ doc.data.permalink }} ">Previous: {{ doc.data.title }}</a>
+    <a href=" {{ doc.data.permalink }} ">
+      {%- if previous == 1 -%}
+      Previous: Course Home
+      {%- else -%}
+      Previous: {{ doc.data.title }}
+      {%- endif -%}
+    </a>
   </div>
   {%- endif -%}
 

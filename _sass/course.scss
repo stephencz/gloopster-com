@@ -96,14 +96,14 @@
 .course-bottom-pagination-wrapper
 {
   display: flex;
-  flex-wrap: nowrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 
   border-radius: 10px;
   border: 1px solid #b6b6b6;
   background-color: $off-white;
 
   padding: $unit-one $unit-two $unit-one $unit-two;
-
+  margin-top: $unit-four;
+  margin-bottom: $unit-two;
 }

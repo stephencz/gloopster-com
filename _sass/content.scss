@@ -48,7 +48,7 @@
 
 .content h1 { font-weight: 700; }
 .content h2 { font-weight: 700; }
-.content h3 { font-weight: 700; }
+.content h3 { font-weight: 400; }
 .content h4 { font-weight: 400; }
 .content h5 { font-weight: 400; }
 .content h6 { font-weight: 400; }
@@ -65,6 +65,11 @@
   color: $light-blue;
 }
 
+
+.content span.highlight-text
+{
+  background-color: #ffffb9;
+}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px)

@@ -14,6 +14,8 @@ collections:
     output: false
 
 markdown: kramdown
+highlighter: rouge
+
 
 plugins:
   - jekyll-feed
