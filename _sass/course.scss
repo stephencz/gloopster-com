@@ -23,7 +23,7 @@
 
   border-radius: 10px;
   border: 1px solid #b6b6b6;
-  background-color: $off-white;
+  background-color: $white;
 
   width: 100%;
 
@@ -48,7 +48,7 @@
 .course-contents-list-wrapper ul a:hover li
 {
   color: $light-gray;
-  background-color: #fff;
+  background-color: #ececec;
 }
 
 .course-contents-list-wrapper a:hover li span.content-type
@@ -106,4 +106,14 @@
   padding: $unit-one $unit-two $unit-one $unit-two;
   margin-top: $unit-four;
   margin-bottom: $unit-two;
+}
+
+.course-sidebar-card
+{
+  border-radius: 10px;
+  background-color: $off-white;
+  width: 75%;
+  padding-bottom: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }

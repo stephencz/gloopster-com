@@ -1,6 +1,4 @@
 <div class="course-contents-list-wrapper">
-  <h2>Learning Pathway</h2>
-
   {% assign desired_course = site.data.course_data | map: include.id %}
   {% assign course_data = desired_course[0].data %}
   {% assign course_docs = desired_course[0].docs %}
