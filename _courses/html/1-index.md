@@ -3,7 +3,7 @@ layout: course-portal
 course_id: "html"
 content_type: "portal"
 lesson_index: 1
-title: "Learn HTML"
+title: "HTML"
 description: "A free course in HTML: A programming language essential to web development."
 permalink: "/courses/html/index.html"
 ---

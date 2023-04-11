@@ -2,19 +2,25 @@
   {
     "draft": false,
     "id": "html",
-    "title": "Learn HTML",
-    "description": "Our HTML course provides you with a deep understanding of the HTML programming language which will serve as a foundation for you journey in web development.",
+    "title": "HTML",
+    "description": "HTML is used by every website and web page that you interact with on a daily basis. If you are interested in web development, then learning HTML is essential. This course will provide you with a deep understanding of HTML that will act as a foundation for your web development journey.",
     "difficulty": "easy",
-    "recommended_prereqs": [],
-    "permalink": "/courses/html/"
+    "knowledge_level": "beginner",
+    "prereqs": ["None"],
+    "permalink": "/courses/html/",
+    "card_link": "/assets/cards/html.svg",
+    "has_flashcards": true
   },
   {
-    "draft": true,
+    "draft": false,
     "id": "css",
     "title": "Learn CSS",
     "description": "Our CSS course provides you with a deep understanding of the CSS programming language which will serve as a foundation for you journey in web development.",
     "difficulty": "easy",
-    "recommended_prereqs": ["html"],
-    "permalink": "/courses/css/"
+    "knowledge_level": "beginner",
+    "prereqs": ["html"],
+    "permalink": "/courses/css/",
+    "card_link": "/assets/cards/css.svg",
+    "has_flashcards": false
   }
 ]

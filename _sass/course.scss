@@ -108,6 +108,8 @@
   margin-bottom: $unit-two;
 }
 
+
+
 .course-sidebar-card
 {
   border-radius: 10px;
@@ -115,5 +117,20 @@
   width: 75%;
   padding-bottom: 75%;
   margin-left: auto;
-  margin-right: auto;
+}
+
+.course-portal-metadata .course-knowledge-level,
+.course-portal-metadata .course-difficulty,
+.course-portal-metadata .course-prereqs,
+.course-portal-metadata .course-flashcards
+{
+  margin-top: $unit-one;
+}
+
+.course-portal-metadata .course-flashcards
+{
+  border-radius: 10px;
+  background-color: $off-white;
+  text-align: center;
+  padding: $unit-half 0 $unit-half 0;
 }
