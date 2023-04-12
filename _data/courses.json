@@ -9,18 +9,30 @@
     "prereqs": ["Basic computer knowledge"],
     "permalink": "/courses/html/",
     "card_link": "/assets/cards/html.svg",
-    "has_flashcards": true
+    "has_flashcards": false
   },
   {
     "draft": false,
     "id": "css",
     "title": "Learn CSS",
     "description": "Our CSS course provides you with a deep understanding of the CSS programming language which will serve as a foundation for you journey in web development.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "knowledge_level": "beginner",
-    "prereqs": ["html"],
+    "prereqs": ["HTML"],
     "permalink": "/courses/css/",
     "card_link": "/assets/cards/css.svg",
+    "has_flashcards": false
+  },
+  {
+    "draft": true,
+    "id": "poetry",
+    "title": "Poetry",
+    "description": "Our CSS course provides you with a deep understanding of the CSS programming language which will serve as a foundation for you journey in web development.",
+    "difficulty": "beginner",
+    "knowledge_level": "beginner",
+    "prereqs": ["English"],
+    "permalink": "/courses/poetry/",
+    "card_link": "/assets/cards/poetry.svg",
     "has_flashcards": false
   }
 ]

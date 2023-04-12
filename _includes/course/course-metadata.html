@@ -10,33 +10,35 @@
           <div class="course-portal-metadata">
             <div class="row">
               <div class="col-6">
-                <div class="course-knowledge-level">Knowledge Level: <span class="knowledge-level {{include.course_data.knowledge_level}}">{{include.course_data.knowledge_level | capitalize}}</span></div>
+                <div class="course-knowledge-level">Knowledge: <span class="knowledge-level {{include.course_data.knowledge_level}}">{{include.course_data.knowledge_level | capitalize}}</span></div>
               </div>
               <div class="col-6">
                 <div class="course-difficulty">Difficulty: <span class="difficulty {{include.course_data.difficulty}}">{{ include.course_data.difficulty | capitalize }}</span></div>
               </div>
             </div>
+
+            
+
             <div class="row">
               <div class="col-6">
                 <div class="course-prereqs">
                   <span>Prerequisites: </span>
                   <ul>
                     {%- for req in include.course_data.prereqs -%}
-                    <li>{{ req }}</li>
+                    <li>{{ req }}{%- if forloop.last != true -%},{%- endif -%}</li>
                     {%- endfor -%}
                   </ul>
                 </div>
               </div>
               <div class="col-6">
-                {%- if include.course_data.has_flashcards -%}
-                <a href="{{ include.course_data.flashcards }}">
-                  <div class="course-flashcards">
-                    Flashcards
-                  </div>
-                </a>
-                {%- else -%}
-                <div class="course-flashcards unavailable">Flashcards Unavailable</div>
-                {%- endif -%}
+                <div class="course-flashcards">
+                  <span>Flashcards:</span>
+                  {%- if include.course_data.has_flashcards -%}
+                    <span class="flashcards"><a href="">Available</a></span>
+                  {%- else -%}
+                    <span class="flashcards">Unavailable</span>
+                  {%- endif -%}
+                </div>
               </div>
             </div>
           </div>
