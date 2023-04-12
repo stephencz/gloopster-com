@@ -4,63 +4,22 @@ layout: default
 
 {% include general/header.html %}
 {% assign course_data = site.data.courses | where: "id", page.course_id | first %}
-<div class="content-wrapper">
-  <div class="container">
 
-    <div class="row">
-      <div class="col-md-7">
+{% include course/course-metadata.html course_data=course_data %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-7">
+      <div class="content-wrapper">
         <div class="content">
-        <h1>{{ course_data.title }}</h1>
-        {{ course_data.description | markdownify }}
+          {% include course/course-contents-list.html id=page.course_id %}
+          {% include course/course-bottom-pagination.html id=page.course_id index=page.lesson_index %}
         </div>
-        <div class="course-portal-metadata">
-          <div class="row">
-            <div class="col-6">
-              <div class="course-knowledge-level">Knowledge Level: {{course_data.knowledge_level | capitalize}} </div>
-            </div>
-            <div class="col-6">
-              <div class="course-difficulty">Difficulty: {{ course_data.difficulty | capitalize }}</div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-6">
-              <div class="course-prereqs">
-                <span>Prerequisites: </span>
-                <ul>
-                  {%- for req in course_data.prereqs -%}
-                  <li>{{ req }}</li>
-                  {%- endfor -%}
-                </ul>
-              </div>
-            </div>
-            <div class="col-6">
-              {%- if course_data.has_flashcards -%}
-              <a href="{{ coures_data.flashcards }}">
-                <div class="course-flashcards">
-                  Flashcards
-                </div>
-              </a>
-              {%- else -%}
-              <div class="course-flashcards unavailable">Flashcards Unavailable</div>
-              {%- endif -%}
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 offset-md-1">
-        <div class="course-sidebar-card" style="background-image: url({{ course_data.card_link }})"></div>
       </div>
     </div>
-    
-    <div class="row">
-      <div class="col-md-7">
-          <div class="content">
-            {% include course/course-contents-list.html id=page.course_id %}
-            {% include course/course-bottom-pagination.html id=page.course_id index=page.lesson_index %}
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4  offset-md-1">
+    <div class="col-md-4  offset-md-1">
+      <div class="sidebar-wrapper">
+        <p>Test</p>
       </div>
     </div>
   </div>

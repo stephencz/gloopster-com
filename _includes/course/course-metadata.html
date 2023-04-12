@@ -1,3 +1,52 @@
-<div class="course-metadata-wrapper">
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-7">
+      <div class="content-wrapper">
+        <div class="content">
+          <h1>{{ include.course_data.title }}</h1>
+          {{ include.course_data.description | markdownify }}
+
+          <div class="course-portal-metadata">
+            <div class="row">
+              <div class="col-6">
+                <div class="course-knowledge-level">Knowledge Level: <span class="knowledge-level {{include.course_data.knowledge_level}}">{{include.course_data.knowledge_level | capitalize}}</span></div>
+              </div>
+              <div class="col-6">
+                <div class="course-difficulty">Difficulty: <span class="difficulty {{include.course_data.difficulty}}">{{ include.course_data.difficulty | capitalize }}</span></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="course-prereqs">
+                  <span>Prerequisites: </span>
+                  <ul>
+                    {%- for req in include.course_data.prereqs -%}
+                    <li>{{ req }}</li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6">
+                {%- if include.course_data.has_flashcards -%}
+                <a href="{{ include.course_data.flashcards }}">
+                  <div class="course-flashcards">
+                    Flashcards
+                  </div>
+                </a>
+                {%- else -%}
+                <div class="course-flashcards unavailable">Flashcards Unavailable</div>
+                {%- endif -%}
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 offset-md-1">
+      <div class="course-sidebar-card" style="background-image: url({{ include.course_data.card_link }})"></div>
+    </div>
+  </div>
   
 </div>

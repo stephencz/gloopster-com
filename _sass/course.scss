@@ -108,17 +108,6 @@
   margin-bottom: $unit-two;
 }
 
-
-
-.course-sidebar-card
-{
-  border-radius: 10px;
-  background-color: $off-white;
-  width: 75%;
-  padding-bottom: 75%;
-  margin-left: auto;
-}
-
 .course-portal-metadata .course-knowledge-level,
 .course-portal-metadata .course-difficulty,
 .course-portal-metadata .course-prereqs,
@@ -133,4 +122,31 @@
   background-color: $off-white;
   text-align: center;
   padding: $unit-half 0 $unit-half 0;
+}
+
+.course-portal-metadata .course-knowledge-level span.knowledge-level,
+.course-portal-metadata .course-difficulty span.difficulty
+{
+  border-radius: 10px;
+  background-color: $off-white;
+  padding: $unit-quarter $unit-half $unit-quarter $unit-half;
+  margin-left: $unit-half;
+}
+
+.course-portal-metadata .course-knowledge-level span.knowledge-level.beginner,
+.course-portal-metadata .course-difficulty span.difficulty.easy
+{
+  background-color: $teal;
+}
+
+.course-portal-metadata .course-knowledge-level span.knowledge-level.intermediate,
+.course-portal-metadata .course-difficulty span.difficulty.medium
+{
+  background-color: $nectar;
+}
+
+.course-portal-metadata .course-knowledge-level span.knowledge-level.expert,
+.course-portal-metadata .course-difficulty span.difficulty.hard
+{
+  background-color: $peach;
 }
